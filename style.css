@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.placholder {
+  height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  --primary-backgrundcolor: #222222;
+  color: var(--primary-textcolor);
+  --primary-color: #ff0000;
+  --primary-textcolor: #ffffff;
+  --primary-subtextcolor: #e0dada;
+  background-color: var(--primary-backgrundcolor);
+}
+
+.nav {
+  background-color: var(--primary-backgrundcolor);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-menu {
+  text-decoration: none;
+  color: var(--primary-textcolor);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: color 0.2s ease-in-out;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.nav-menu:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(src/heroImg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero_headline {
+  font-family: "Molle", cursive;
+  font-weight: 400;
+
+  font-style: italic;
+}
+
+.hero_subline {
+  padding: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--primary-subtextcolor);
+}
+
+.container{
+  margin: 0 2rem  0 2rem; 
+}
+
+.button {
+  display:inline-block;
+  border-radius: 1rem;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: var(--primay-textcolor);
+  padding: 1rem 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.aboutUs_headline{
+  margin: 2rem 0 1rem 0;
+  width: fit-content;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-bottom: solid 1px var(--primary-color);
+  
+}
+
+.aboutUs_p
+{
+font-size: 0.9rem;
+color: var(--primary-subtextcolor);
+}
+
+
+.aboutUs_button{
+  margin-top: 2rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .nav {
+    gap: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .hero h1 {
+    margin-top: 7rem;
+  }
+  .hero_headline {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .hero_subline {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 1.2rem 2.5rem;
+  }
+
+  .aboutUs_p{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav {
+    gap: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container{max-width: 1200px;}
+  
+}
