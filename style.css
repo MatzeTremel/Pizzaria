@@ -82,12 +82,12 @@ body {
   color: var(--primary-subtextcolor);
 }
 
-.container{
-  margin: 0 2rem  0 2rem; 
+.container {
+  margin: 0 2rem 0 2rem;
 }
 
 .button {
-  display:inline-block;
+  display: inline-block;
   border-radius: 1rem;
   border: 2px solid var(--primary-color);
   background-color: var(--primary-color);
@@ -101,23 +101,20 @@ body {
   background-color: transparent;
   color: var(--primary-color);
 }
-.aboutUs_headline{
+.aboutUs_headline {
   margin: 2rem 0 1rem 0;
   width: fit-content;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   border-bottom: solid 1px var(--primary-color);
-  
 }
 
-.aboutUs_p
-{
-font-size: 0.9rem;
-color: var(--primary-subtextcolor);
+.aboutUs_p {
+  font-size: 0.9rem;
+  color: var(--primary-subtextcolor);
 }
 
-
-.aboutUs_button{
+.aboutUs_button {
   margin-top: 2rem;
 }
 
@@ -143,7 +140,7 @@ color: var(--primary-subtextcolor);
     padding: 1.2rem 2.5rem;
   }
 
-  .aboutUs_p{
+  .aboutUs_p {
     font-size: 1rem;
   }
 }
@@ -157,9 +154,14 @@ color: var(--primary-subtextcolor);
     font-size: 5rem;
     line-height: 5.5rem;
   }
+
+  .aboutUs_headline {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
-  .container{max-width: 1200px;}
-  
+  .container {
+    max-width: 1200px;
+  }
 }
