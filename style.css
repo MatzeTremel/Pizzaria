@@ -69,7 +69,6 @@ body {
 .hero_headline {
   font-family: "Molle", cursive;
   font-weight: 400;
-
   font-style: italic;
 }
 
@@ -83,7 +82,9 @@ body {
 }
 
 .container {
-  margin: 0 2rem 0 2rem;
+  background-color: blue;
+  margin: 0 auto ;
+  width: 100%;
 }
 
 .button {
@@ -101,6 +102,43 @@ body {
   background-color: transparent;
   color: var(--primary-color);
 }
+
+.about_wrapper{
+  
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+
+  
+}
+
+
+
+
+.about_imges{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+.about_image_top {
+  background-color: #ff0000;
+  display: flex;
+  justify-content: center;
+
+}
+
+.about_image_row {
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: burlywood;
+  
+}
+
 .aboutUs_headline {
   margin: 2rem 0 1rem 0;
   width: fit-content;
@@ -110,6 +148,8 @@ body {
 }
 
 .aboutUs_p {
+  background-color: chartreuse;
+ 
   font-size: 0.9rem;
   color: var(--primary-subtextcolor);
 }
@@ -118,6 +158,14 @@ body {
   margin-top: 2rem;
 }
 
+
+.aboutUs_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+
+}
 
 @media only screen and (min-width: 600px) {
   .nav {
