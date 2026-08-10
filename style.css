@@ -8,17 +8,20 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   --primary-backgrundcolor: #222222;
-  color: var(--primary-textcolor);
   --primary-color: #ff0000;
   --primary-textcolor: #ffffff;
   --primary-subtextcolor: #e0dada;
-  background-color: var(--primary-backgrundcolor);
-}
 
+  color: var(--primary-textcolor);
+  background-color: var(--primary-backgrundcolor);
+  font-family: "Inter", sans-serif;
+}
+/*Menü*/
 .nav {
   background-color: var(--primary-backgrundcolor);
   display: flex;
@@ -26,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: 0.8rem;
   height: 5rem;
   position: fixed;
@@ -50,7 +53,7 @@ body {
 .nav-menu:hover {
   color: var(--primary-color);
 }
-
+/*Hero*/
 .hero {
   height: 100vh;
   display: flex;
@@ -66,13 +69,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero_headline {
+.hero-headline {
   font-family: "Molle", cursive;
   font-weight: 400;
   font-style: italic;
 }
 
-.hero_subline {
+.hero-subline {
   padding: 0.5rem;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -82,9 +85,10 @@ body {
 }
 
 .container {
-  background-color: blue;
-  margin: 0 auto ;
+  margin: 0 auto;
   width: 100%;
+  max-width: 75rem;
+  padding: 0 2rem;
 }
 
 .button {
@@ -93,7 +97,7 @@ body {
   border: 2px solid var(--primary-color);
   background-color: var(--primary-color);
   text-decoration: none;
-  color: var(--primay-textcolor);
+  color: var(--primary-textcolor);
   padding: 1rem 2rem;
   transition: all 0.2s ease-in-out;
 }
@@ -102,69 +106,72 @@ body {
   background-color: transparent;
   color: var(--primary-color);
 }
-
-.about_wrapper{
-  
-  background-color: aqua;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  align-items: flex-start;
-
-  
-}
-
-
-
-
-.about_imges{
+/*Über uns*/
+.aboutUs-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-
-}
-.about_image_top {
-  background-color: #ff0000;
-  display: flex;
   justify-content: center;
-
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
 }
 
-.about_image_row {
-
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  background-color: burlywood;
-  
+.aboutUs-content {
+  width: 100%;
 }
 
-.aboutUs_headline {
-  margin: 2rem 0 1rem 0;
+.aboutUs-headline {
+  margin: 0 0 1rem 0;
   width: fit-content;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   border-bottom: solid 1px var(--primary-color);
+  font-size: 1.8rem;
 }
 
-.aboutUs_p {
-  background-color: chartreuse;
- 
-  font-size: 0.9rem;
+.aboutUs-p {
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--primary-subtextcolor);
 }
 
-.aboutUs_button {
+.aboutUs-button {
   margin-top: 2rem;
 }
 
-
-.aboutUs_img {
+.aboutUs-imges {
   width: 100%;
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  aspect-ratio: 1 / 1;
+  
+}
+
+.aboutUs-image-left{
+  flex: 1;
+  height: 100%;
+}
+
+.aboutUs-image-right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+
+}
+
+.aboutUs-img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 0.5rem;
+}
 
-
+.aboutUs-image-right .aboutUs-img{
+  flex: 1;
+  min-height: 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -175,12 +182,12 @@ body {
   .hero h1 {
     margin-top: 7rem;
   }
-  .hero_headline {
+  .hero-headline {
     font-size: 3rem;
     line-height: 3rem;
   }
 
-  .hero_subline {
+  .hero-subline {
     font-size: 1.5rem;
   }
 
@@ -188,7 +195,7 @@ body {
     padding: 1.2rem 2.5rem;
   }
 
-  .aboutUs_p {
+  .aboutUs-p {
     font-size: 1rem;
   }
 }
@@ -203,8 +210,29 @@ body {
     line-height: 5.5rem;
   }
 
-  .aboutUs_headline {
+  .aboutUs-headline {
     font-size: 2rem;
+  }
+
+    
+  .aboutUs-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem 0;
+  }
+  .aboutUs-content {
+    flex: 1;
+  }
+  .aboutUs-imges {
+    flex: 1;
+    gap: 1rem;
+    aspect-ratio: auto; 
+    height: 60vh;       
+    max-height: 35rem;  
+  }
+  .aboutUs-image-right {
+    gap: 1rem;
   }
 }
 
