@@ -145,51 +145,70 @@ body {
   flex-direction: row;
   gap: 0.5rem;
   aspect-ratio: 1 / 1;
-  
 }
 
-.aboutUs-image-left{
-  flex: 1;
+.aboutUs-image-left {
+  flex-grow: 2.5;
+  flex-shrink: 1;
+  flex-basis: 0%;
   height: 100%;
 }
 
-.aboutUs-image-right{
-  flex: 1;
+.aboutUs-image-right {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   height: 100%;
-
+  flex-grow: 3;
+  flex-shrink: 1;
+  flex-basis: 0%;
 }
 
-.aboutUs-img{
+.aboutUs-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
 }
 
-.aboutUs-image-right .aboutUs-img{
-  flex: 1;
+.aboutUs-image-right .aboutUs-img {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
   min-height: 0;
 }
 
-.opening-hours{
+.opening-hours {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(src/hoursImg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hours {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-
+  justify-content: center;
+  margin-top: 1rem;
+  height: 50vh;
 }
 
-.hours{
+.day-hours{
   display: flex;
-  flex-direction: column;
-  
+  justify-content: space-between;
+  width: 18rem;
+  margin-bottom: 0.5;
+  padding: 0.5rem;
 }
 
-
-
+.days {
+  color: var(--primary-textcolor);
+}
 
 @media only screen and (min-width: 600px) {
   .nav {
@@ -231,7 +250,6 @@ body {
     font-size: 2rem;
   }
 
-    
   .aboutUs-wrapper {
     flex-direction: row;
     align-items: center;
@@ -239,14 +257,18 @@ body {
     padding: 6rem 0;
   }
   .aboutUs-content {
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
   }
   .aboutUs-imges {
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
     gap: 1rem;
-    aspect-ratio: auto; 
-    height: 60vh;       
-    max-height: 35rem;  
+    aspect-ratio: auto;
+    height: 60vh;
+    max-height: 35rem;
   }
   .aboutUs-image-right {
     gap: 1rem;
