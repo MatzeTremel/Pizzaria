@@ -197,7 +197,7 @@ body {
   text-align: center;
 }
 .foodcard {
- margin: 0.5rem 0;
+  margin: 0.5rem 0;
   padding: 1rem 0;
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -205,7 +205,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
  
   
 }
@@ -498,4 +497,5 @@ p {
   .container {
     max-width: 1200px;
   }
+}
 }
