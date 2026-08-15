@@ -290,7 +290,7 @@ body {
 
 .footer-nav{
   border-top: var(--primary-color) solid 0.1rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
    background-color:var(--primarry-footer-color);
  
 }
@@ -301,6 +301,10 @@ font-size: 0.8rem;
  background-color:var(--primarry-footer-color);
 }
 
+.nav-footer:hover{
+  color: var(--primary-color);
+}
+
 .footer-copy{
   text-align:center;
   font-size: 0.8rem;
@@ -309,8 +313,10 @@ font-size: 0.8rem;
 }
 
 .footer-copy ,p{
-  padding-bottom: 2rem;
+  padding-bottom:  2rem;
 }
+
+
 
 @media only screen and (min-width: 600px) {
   .nav {
