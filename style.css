@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-
-html {
-  scroll-behavior: smooth;
-}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.opening-hours,
+.aboutUs,
+.contact {
+  scroll-margin-top: 5rem;
 }
 
 body {
@@ -16,7 +21,7 @@ body {
   --primary-color: #ff0000;
   --primary-textcolor: #ffffff;
   --primary-subtextcolor: #e0dada;
-  --primarry-footer-color:#494747;
+  --primarry-footer-color: #494747;
 
   color: var(--primary-textcolor);
   background-color: var(--primary-backgrundcolor);
@@ -222,16 +227,10 @@ body {
   color: var(--primary-textcolor);
 }
 
-.opening-hours,
-.aboutUs,
-.contact {
-  scroll-margin-top: 5rem;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .contact-contents {
@@ -242,6 +241,7 @@ body {
   align-items: flex-start;
 }
 .contact-img {
+  border-radius: 0.5rem;
   width: 100%;
 }
 .contact .headline {
@@ -251,6 +251,11 @@ body {
 .contact-details {
   margin-top: 1rem;
   color: var(--primary-textcolor);
+}
+
+.contact-details,
+p {
+  padding: 0;
 }
 
 .contact-buttons {
@@ -288,35 +293,33 @@ body {
   background-color: var(--primary-color);
 }
 
-.footer-nav{
+.footer-nav {
   border-top: var(--primary-color) solid 0.1rem;
   padding-top: 3rem;
-   background-color:var(--primarry-footer-color);
- 
+  background-color: var(--primarry-footer-color);
 }
-.footer-menu{
-flex-direction: column;
-margin-bottom: 2rem;
-font-size: 0.8rem;
- background-color:var(--primarry-footer-color);
+.footer-menu {
+  flex-direction: column;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  background-color: var(--primarry-footer-color);
 }
 
-.nav-footer:hover{
+.nav-footer:hover {
   color: var(--primary-color);
 }
 
-.footer-copy{
-  text-align:center;
+.footer-copy {
+  text-align: center;
   font-size: 0.8rem;
   color: var(--primary-subtextcolor);
-  background-color:var(--primarry-footer-color);
+  background-color: var(--primarry-footer-color);
 }
 
-.footer-copy ,p{
-  padding-bottom:  2rem;
+.footer-copy,
+p {
+  padding-bottom: 2rem;
 }
-
-
 
 @media only screen and (min-width: 600px) {
   .nav {
@@ -354,11 +357,10 @@ font-size: 0.8rem;
     width: 100%;
   }
 
-  .footer-menu{
-flex-direction: row;
-font-size: 1rem;
-
-}
+  .footer-menu {
+    flex-direction: row;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
